@@ -1,0 +1,416 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    transition: all 1s ease-in-out 2s;
+}
+
+.navBar {
+    padding: 1.5rem;
+}
+
+.navBar:hover {
+    background-color: black;
+}
+
+.navBar .itemList {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.navBar .itemList li {
+    list-style: none;
+}
+
+.navBar .itemList li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navBar .itemList li a:hover {
+    border-bottom: 2px solid rgb(214, 159, 18);
+}
+
+.navBar:hover .itemList li a {
+    color: white;
+}
+
+@media(max-width:600px) {
+    .navBar .itemList {
+        display: block;
+
+    }
+
+    .navBar .itemList li {
+        margin-bottom: .7rem;
+    }
+}
+
+/* slide css */
+.slideSec {
+    background-image: url(./images/card\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.496);
+}
+
+.slideSec img {
+    width: 300px;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+}
+
+@media(max-width:600px) {
+    .slideSec {
+        display: none;
+    }
+}
+
+/* firstSec */
+.firstSec {
+    background-color: antiquewhite;
+}
+
+.firstSec .text {
+    width: 80%;
+    margin: 0% auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.firstSec .text p {
+    font-size: 15px;
+}
+
+/* aboutUsSec */
+#aboutUsSec {
+    padding: 1rem;
+}
+
+#aboutUsSec .aboutParentDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    justify-content: space-around;
+    margin: 5rem 1rem;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv {
+    margin-bottom: 1rem;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv img {
+    box-shadow: -10px -6px 0px chocolate;
+    width: 300px;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv h2 {
+    font-size: 30px;
+    color: rgb(96, 95, 95);
+    margin-top: 6rem;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv .divider {
+    content: '';
+    height: 2px;
+    width: 45px;
+    position: relative;
+    left: 12px;
+    top: 3px;
+    display: block;
+    background-color: chocolate;
+    margin-bottom: 2rem;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv p {
+    font-size: 12px;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv .aboutBtn button {
+    padding: .6rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid chocolate;
+    color: chocolate;
+    font-weight: bold;
+    margin: 2rem 1rem;
+}
+
+#aboutUsSec .aboutParentDiv .aboutChildDiv .aboutBtn button:hover {
+    background-color: chocolate;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+@media(max-width:760px) {
+    #aboutUsSec .aboutParentDiv {
+        display: block;
+        margin: 0%;
+    }
+
+}
+
+/* servicesSec */
+#servicesSec {
+   background-color: rgb(230, 224, 224);
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+
+}
+
+.container h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(96, 95, 95);
+}
+
+#servicesSec .container .divider {
+    content: '';
+    width: 45px;
+    height: 2px;
+    display: block;
+    background-color: chocolate;
+    left: 360px;
+    top: 4px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#servicesSec .container p {
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 2rem;
+}
+
+#servicesSec .CardParenDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+    width: 95%;
+    margin:0 auto;
+}
+
+#servicesSec .CardParenDiv .cardChildDiv {
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 7px gray;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    background-color: white;
+}
+#servicesSec .CardParenDiv .cardChildDiv:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    background-color: black;
+    color: white;
+}
+
+#servicesSec .CardParenDiv .cardChildDiv h4 {
+    font-size: 20px;
+    color: rgb(93, 91, 91);
+    padding-bottom: .6rem;
+}
+
+#servicesSec .CardParenDiv .cardChildDiv p {
+    font-size: 12px;
+}
+
+@media(max-width:750px) {
+    #servicesSec .CardParenDiv {
+        display: block;
+    }
+    
+}
+
+/* projectSection */
+.projectSection{
+    background-color: chocolate;
+    margin: 7rem 0;
+}
+.projectParentDiv{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.projectParentDiv .projectContent h2{
+   font-size:27px;
+   padding: 1rem;
+   margin-top: 2rem;
+}
+.projectParentDiv .projectContent p{
+   font-size:13px;
+   padding: 1rem;
+}
+@media(max-width:750px){
+    .projectParentDiv{
+        display: block;
+    }
+}
+
+/* GalleryParentDiv */
+.GalleryParentDiv{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(3, auto);
+}
+
+.GalleryParentDiv .items{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.GalleryParentDiv .items:nth-child(1){
+    grid-row: 1 / span 2 ;
+}
+.GalleryParentDiv .items:nth-child(3){
+    grid-row: 2 / span 2;
+}
+.GalleryParentDiv .items:hover .hover{
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.736);
+    transition-duration: 1s;
+   
+
+}
+.GalleryParentDiv .items:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.GalleryParentDiv .items:hover .hover p{
+    opacity: 1;
+    transition-duration: 1s;
+}
+.hover{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.hover p{
+    opacity: 0;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+@media(max-width:500px){
+    .GalleryParentDiv{
+        display: block;
+    }
+}
+
+.lastTextSec{
+    background-image: url(./images/card\ \(8\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.537);
+}
+
+.lastTextSec .lastTextDiv{
+     width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 11rem;
+    
+}
+
+.lastTextSec .lastTextDiv p span{
+    font-size: 48px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+.lastTextSec .lastTextDiv p {
+    font-size: 20px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* contactSect */
+#contactSect{
+    padding: 2rem;
+    background-image: url(./images/contact\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.739);
+}
+#contactSect .contactParentDiv{
+    width: 80%;
+    text-align: center;
+    margin: 0% auto;
+}
+#contactSect .contactParentDiv .formParentDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contactSect .contactParentDiv .formParentDiv input{
+    width: 150%;
+    padding: .5rem;
+}
+#contactSect .contactParentDiv  form .numberDiv{
+    /* background-color: red; */
+    margin: 1rem auto;
+    padding: rem;
+}
+#contactSect .contactParentDiv  form .numberDiv input{
+    padding: .5rem;
+    width: 75%;
+    margin-left: 6rem;
+}
+#contactSect .contactParentDiv  form textarea{
+    padding: .6rem;
+    margin-left: 6rem; 
+}
+#contactSect .contactParentDiv form input:focus{
+    background-color: black;
+    color: white;
+
+}
+#contactSect .contactParentDiv form button{
+    padding: .5rem 1rem;
+    margin: 1rem;
+    color: chocolate;
+    border: 1px solid chocolate;
+    border-radius: 2px;
+    background-color: transparent;
+}
+#contactSect .contactParentDiv form button:hover
+{
+    background-color: chocolate;
+    color: white;
+    transition-duration: 1s;
+    border: 1px solid white;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
